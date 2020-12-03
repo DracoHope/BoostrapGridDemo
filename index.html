@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid Demo</title>
+	  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	  <!-- Lecture 469 - Bootstrap Container - https://getbootstrap.com/docs/4.5/layout/overview/#containers
+  Container are useful because it allow us to Horizontally center and to pad out content
+  Containers are used to contain, pad, and (sometimes) center the content within them
+  Notice "container" class will not span and take up the full width of the screen or viewport
+  Container are also automatically Responsive. This all anything inside the Container to be Responsive 
+  according to the viewport or screen size-->
+  <!-- Another type of Container is the Fluid Container - https://getbootstrap.com/docs/4.5/layout/overview/#fluid
+  Fluid Container will always take up 100% of the width of the viewport no matter what is the viewport size -->
+
+      <!-- Lecture 469 - Bootstrap Container - https://getbootstrap.com/docs/4.5/layout/overview/#containers
+      Container are useful because it allow us to Horizontally center and to pad out content
+      Containers are used to contain, pad, and (sometimes) center the content within them
+      Notice "container" class will not span and take up the full width of the screen or viewport
+      Container are also automatically Responsive. This all anything inside the Container to be Responsive 
+      according to the viewport or screen size-->
+      <!-- Another type of Container is the Fluid Container - https://getbootstrap.com/docs/4.5/layout/overview/#fluid
+      Fluid Container will always take up 100% of the width of the viewport no matter what is the viewport size -->
+<br>
+  <section> 
+    <div class="container" >
+      	<p style="color:blueviolet; background-color: beige; text-align: center; font-size: 18px; font-weight: bold;">Using Bootstrap Container - Will not occupy 100% of Viewport</p>
+        <div class="row">
+             <div class="col-6" style="background-color: blue; border: 1px solid;; color: white;">
+               col-6 Column 1 - this is NOT responsive to Screen Size
+             </div>
+             <div class="col-6" style="background-color: blue; border: 1px solid;; color: white;">
+               col-6 Column 2 - this is NOT responsive to Screen Size
+             </div>
+        </div>
+     <br>
+         <div class="row">
+               <div class="col-6" style="background-color: purple; border: 1px solid; color: white;">
+               col-6 Column 1 - this is NOT responsive to Screen Size
+               </div>
+               <div class="col-3" style="background-color: purple; border: 1px solid; color: white;">
+               col-3 Column 2 - this is NOT responsive to Screen Size
+               </div>
+               <div class="col-2" style="background-color: purple; border: 1px solid; color: white;">
+               col-2 Column 3 - this is NOT responsive to Screen Size
+               </div>
+               <div class="col-1" style="background-color: purple; border: 1px solid; color: white;">
+               col-1 Column 4 - this is NOT responsive to Screen Size
+               </div>
+          </div>
+     </div>
+     <br>
+ 	<div class="container-fluid">
+ 		<p style="color:blueviolet; background-color: beige; text-align: center; font-size: 18px; font-weight: bold;">Using Bootstrap Container Fluid - Will occupy 100% of Viewport all the time</p>
+         <div class="row">
+             <div class="col-md-6" style="background-color: green; border: 1px solid;; color: white;">
+               col-md-6 Column 1 - this is responsive to Screen Size
+             </div>
+             <div class="col-md-6" style="background-color: green; border: 1px solid;; color: white;">
+               col-md-6 Column 2 - this is responsive to Screen Size
+             </div>
+         </div>
+         <br>
+         <!-- We can be more specific in having number of column with same column space
+           according to differnt screen size such as Deaktop - lg, Tablet - md and Mobile - sm -->
+         <p style="color:blueviolet; background-color: beige; text-align: center; font-size: 18px;">We can be more specific in having number of column with same column space
+           according to differnt screen size such as Deaktop - lg, Tablet - md and Mobile - sm.The Bootstrap Screen Size difinition - Extra small "col-xs-x" < 576px	Small "col-sm-x" ≥ 576px	Medium "col-sm-x" ≥ 768px	Large "col-lg-x" ≥ 992px	Extra large "col-xl-x" ≥ 1200px</p>
+          <p style="color:blueviolet; background-color: beige; text-align: center; font-size: 18px;">Example below will demonstarte the Bootstrap response to the "View Port" or Screeen Size according to our definition
+            "col-lg-3" - Means Display 4 columns whe the Screen Size is Large because 12/3 = 4. "col-md-4"  - Means Display 3 columns whe the Screen Size is Medium because 12/4 = 3.
+            "col-sm-6" - Means Display 2 columns whe the Screen Size is Large because 12/6 = 2. When the Screen Size is smaller than 576px then only one column will be display</p>
+     
+         <div class="row">
+             <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: pink; border: 1px solid;">
+               col-lg-3 col-md-4 col-sm-6 - this is responsive to Screen Size
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: pink; border: 1px solid;">
+               col-lg-3 col-md-4 col-sm-6 - this is responsive to Screen Size
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: pink; border: 1px solid;">
+               col-lg-3 col-md-4 col-sm-6 - this is responsive to Screen Size
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: pink; border: 1px solid;">
+               col-lg-3 col-md-4 col-sm-6 - this is responsive to Screen Size
+             </div>
+         </div>
+     <br>
+
+     <p style="color:blueviolet; background-color: beige; text-align: center; font-size: 18px;">Try to apply the apply Bootstrap definition for the Example below then basically you will understand.
+      The Bootstrap Screen Size difinition - Extra small "col-xs-x" < 576px	Small "col-sm-x" ≥ 576px	Medium "col-sm-x" ≥ 768px	Large "col-lg-x" ≥ 992px	Extra large "col-xl-x" ≥ 1200px</p>
+         <div class="row">
+           <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: blueviolet; border: 1px solid; color: white;">
+             col-lg-2 col-md-3 col-sm-12 - this is responsive to Screen Size
+           </div>
+           <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: blueviolet; border: 1px solid; color: white;">
+             col-lg-2 col-md-3 col-sm-12 - this is responsive to Screen Size
+           </div>
+           <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: blueviolet; border: 1px solid; color: white;">
+             col-lg-2 col-md-3 col-sm-12 - this is responsive to Screen Size
+           </div>
+           <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: blueviolet; border: 1px solid; color: white;">
+             col-lg-2 col-md-3 col-sm-12 - this is responsive to Screen Size
+           </div>
+           <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: blueviolet; border: 1px solid; color: white;">
+             col-lg-2 col-md-3 col-sm-12 - this is responsive to Screen Size
+           </div>
+           <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: blueviolet; border: 1px solid; color: white;">
+             col-lg-2 col-md-3 col-sm-12 - this is responsive to Screen Size
+           </div>
+       </div>
+       
+
+    </div> 
+  </section>
+
+</body>
+</html>
+
+
+
